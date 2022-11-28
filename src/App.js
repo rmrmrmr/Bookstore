@@ -4,14 +4,15 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import './App.css';
+import AddBook from './components/AddBook';
 import Navbar from './components/Navbar';
+import List from './components/List';
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navbar />}/>
+        <Route path="/" element={<div className="h-screen"><Navbar /><List /><AddBook /></div>}/>
       </Routes>
     </Router>
   );
