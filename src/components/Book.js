@@ -8,7 +8,7 @@ export default function Book(props) {
     <div className="border-2 border-slate-300 h-36 w-full grid grid-cols-3 grid-rows-2 p-6 bg-white">
         <div className="flex flex-col">
           <h3 className="text-xs text-slate-500 font-sans">Action</h3>
-          <h2 className="font-bold text-lg">{props.title}</h2>
+          <h2 className="text-xl font-bold">{props.title}</h2>
           <h3 className="text-xs text-blue-400">{props.author}</h3>
         </div>
         <div className="row-start-2 flex items-end w-full justify-between text-blue-400">
@@ -27,8 +27,8 @@ export default function Book(props) {
         </div>
         <div className="flex flex-wrap pl-10 items-center h-full row-span-2">
           <div className="w-full">
-          <p className="w-full text-slate-500 text-xs">{props.chapter}</p>
-          <p className="w-full text-lg">Chapter 17</p>
+          <p className="w-full text-slate-500 text-xs">CURRENT CHAPTER</p>
+          <p className="w-full text-lg">{props.chapter}</p>
           </div>
           <input type="button" value="UPDATE PROGRESS" className="bg-blue-500 text-white py-2 text-sm w-4/6"/>
         </div>
