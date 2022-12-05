@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { RiUser5Line } from 'react-icons/ri';
 
@@ -12,5 +12,5 @@ export default function Books() {
       </nav>
       <span className="ml-auto"><RiUser5Line className="h-1/6 w-10 text-blue-500" /></span>
     </header>
-  )
+  );
 }

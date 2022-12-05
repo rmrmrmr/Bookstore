@@ -12,7 +12,16 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<div className="h-screen"><Navbar /><List /><AddBook /></div>}/>
+        <Route
+          path="/"
+          element={(
+            <div className="h-screen">
+              <Navbar />
+              <List />
+              <AddBook />
+            </div>
+)}
+        />
       </Routes>
     </Router>
   );
