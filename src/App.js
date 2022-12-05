@@ -22,6 +22,15 @@ export default function App() {
             </div>
 )}
         />
+        <Route
+          path="/categories"
+          element={(
+            <div className="h-screen flex flex-wrap justify-center">
+              <Navbar />
+              <input type="button" value="Check Status" className="bg-blue-500 text-white px-10 py-2 text-sm w-1/6 h-9" />
+            </div>
+)}
+        />
       </Routes>
     </Router>
   );
