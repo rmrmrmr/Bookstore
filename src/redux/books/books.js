@@ -18,6 +18,14 @@ const initialState = {
       chapter: 'Chapter 3',
       percentage: 24,
     },
+    {
+      id: 'dVxxLqI4ueuoOcRkmd1cP',
+      title: 'The Banquet',
+      author: 'Plato',
+      category: 'Philosophy',
+      chapter: 'Chapter 1',
+      percentage: 12,
+    },
   ],
 };
 
