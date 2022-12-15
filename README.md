@@ -1,43 +1,138 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# BookStore
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="https://github.com/microverseinc/readme-template/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-> The Bookstore is a website similar to the "Awesome Books" website that allows you to:
-- Display a list of books.
-- Add a book.
-- Remove a selected Book
+  <h3><b>Microverse README Template</b></h3>
 
-## Built With
+</div>
 
-- React ⚛️
-- Redux 🧪
+<!-- TABLE OF CONTENTS -->
 
-<!-- ## Live Demo
+# 📗 Table of Contents
 
-Not available yet -->
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-## Getting Started
+<!-- PROJECT DESCRIPTION -->
 
-To get a local copy up and running follow these simple example steps.
+# 📖 [Bookstore] <a name="about-project"></a>
+
+> The Bookstore is a 
+- Display a list of books
+- Add a book
+- Remove a selected book
+
+**[Bookstore]** is a website similar to the "Awesome Books" website
+- Display a list of books
+- Add a book
+- Remove a selected book
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[Display a list of books]**
+- **[Add a book]**
+- **[Remove a book]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo not yet available <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://yourdeployedapplicationlink.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-- Have a source code editor such as VSCode
-- Install nodeJS along with NPM
+
+In order to run this project you need:
+
+- A source code editor such as VSCode
 
 ### Setup
-- Clone this repository into your local environment with `git clone git@github.com:rmrmrmr/Bookstore.git`
+
+Clone this repository to your desired folder:
+
+- Run `git clone git@github.com:rmrmrmr/Bookstore.git` on your local terminal
 
 ### Install
-- Just run `npm i` on the root of the project and you're good to go. All of the necesary packages will be installed for you!
+
+Install this project with:
+
+- `npm i` on the root directory of the project
 
 ### Usage
 
-### Run tests
-- Run `npm start` to se a live version of the project on your browser
-- Run `npx stylelint --fix "**/*.{css,scss}"` to get Stylelint going, a linter for CSS
-- Run `npx eslint --fix .` to get ESLint going, a linter for JS
+To run the project, execute the following command:
 
-## Authors
+- `npm run start`
+
+### Run tests
+
+To run tests, run the following command:
+
+- `npm run test`
+
+### Deployment
+
+You can deploy this project using:
+
+- `npm run build`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+> Mention all of the collaborators of this project.
 
 👤 **Ricardo Martínez**
 
@@ -45,24 +140,53 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@ricmtza](https://twitter.com/ricmtza)
 - LinkedIn: [Ricardo Martínez](https://www.linkedin.com/in/ricardomtz7714/)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- SUPPORT -->
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-- Hat tip to the Microverse program!
-- Hat tip to anyone whose code was used!
+> Write a message to encourage readers to support your project
 
+If you like this project...
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+
+I would like to thank the Microverse Program!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
