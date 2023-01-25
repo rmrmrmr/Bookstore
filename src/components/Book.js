@@ -2,21 +2,38 @@ import React from 'react';
 import propTypes from 'prop-types';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 export default function Book({
-  title, author, percentage, chapter,
+  title, author, category, chapter, id, percentage,
 }) {
+  const dispatch = useDispatch();
   return (
     <div className="border-2 border-slate-300 h-36 w-full grid grid-cols-3 grid-rows-2 p-6 bg-white">
       <div className="flex flex-col">
-        <h3 className="text-xs text-slate-500 font-sans">Action</h3>
+        <h3 className="text-xs text-slate-500 font-sans">{category}</h3>
         <h2 className="text-xl font-bold">{title}</h2>
         <h3 className="text-xs text-blue-400">{author}</h3>
       </div>
       <div className="row-start-2 flex items-end w-full justify-between text-blue-400">
-        <p className="pr-6">Comments</p>
-        <p className="border-x-2 border-slate-300 grow text-center">Remove</p>
-        <p className="grow text-center">Edit</p>
+        <input
+          value="Comments"
+          type="button"
+          className="pr-6"
+        />
+        <input
+          value="Remove"
+          type="button"
+          className="border-x-2 border-slate-300 grow text-center"
+          onClick={() => dispatch(removeBook(id))}
+          onKeyUp={() => dispatch(removeBook(id))}
+        />
+        <input
+          value="Edit"
+          type="button"
+          className="grow text-center"
+        />
       </div>
       <div className="col-start-2 row-span-2 flex flex-wrap flex-col overflow-hidden content-end font-sans border-r-2">
         <div className="w-1/3 h-full">
@@ -46,4 +63,6 @@ Book.propTypes = {
   author: propTypes.string.isRequired,
   percentage: propTypes.number.isRequired,
   chapter: propTypes.string.isRequired,
+  category: propTypes.string.isRequired,
+  id: propTypes.string.isRequired,
 };
