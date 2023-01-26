@@ -1,7 +1,32 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  books: [],
+  books: [
+    {
+      id: 'br6bnAI4ueuoOcRkmd1cP',
+      title: 'Slaughterhouse-Five, or, The Childrens Crusade: A Duty-Dance with Death',
+      author: 'Kurt Vonnegut',
+      category: 'Satire',
+      chapter: 'Chapter 5',
+      percentage: 37,
+    },
+    {
+      id: 'dVxxLqeVbc0lA4ULXhkOn',
+      title: 'Moby Dick',
+      author: 'Herman Melville',
+      category: 'Epic',
+      chapter: 'Chapter 3',
+      percentage: 24,
+    },
+    {
+      id: 'dVxxLqI4ueuoOcRkmd1cP',
+      title: 'The Banquet',
+      author: 'Plato',
+      category: 'Philosophy',
+      chapter: 'Chapter 1',
+      percentage: 12,
+    },
+  ],
 };
 
 const books = createSlice({
