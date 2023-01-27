@@ -26,6 +26,7 @@ export default function Form() {
           id="titleInput"
           placeholder="Book Title"
           className="w-4/6 border-2 py-1 px-2"
+          required
         />
         <input
           type="text"
@@ -33,6 +34,7 @@ export default function Form() {
           id="authotInput"
           placeholder="Author"
           className="w-1/6 border-2 py-1 px-2"
+          required
         />
         <button
           type="submit"
