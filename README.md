@@ -48,20 +48,19 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://react-redux.js.org/">Redux</a></li>
   </ul>
 </details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **[Display a list of books]**
 - **[Add a book]**
@@ -73,8 +72,6 @@
 
 ## 🚀 Live Demo not yet available <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -82,8 +79,6 @@
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -129,8 +124,6 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Ricardo Martínez**
 
 - GitHub: [@rmrmrmr](https://github.com/rmrmrmr)
@@ -140,6 +133,11 @@ You can deploy this project using:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Edit Tasks]**
+- [ ] **[Add general progress]**
+- [ ] **[Add chapters progress]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
