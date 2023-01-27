@@ -1,14 +1,18 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { deleteBooksThunk } from '../redux/books/apiConnect';
+import 'react-circular-progressbar/dist/styles.css';
 
 export default function Book({
   title, author, category, chapter, id, percentage,
 }) {
   const dispatch = useDispatch();
+  const actionButton = () => {
+    dispatch(deleteBooksThunk(id));
+  };
+
   return (
     <div className="border-2 border-slate-300 h-36 w-full grid grid-cols-3 grid-rows-2 p-6 bg-white">
       <div className="flex flex-col">
@@ -26,8 +30,8 @@ export default function Book({
           value="Remove"
           type="button"
           className="border-x-2 border-slate-300 grow text-center"
-          onClick={() => dispatch(removeBook(id))}
-          onKeyUp={() => dispatch(removeBook(id))}
+          onClick={() => actionButton()}
+          onKeyUp={() => actionButton()}
         />
         <input
           value="Edit"
@@ -58,11 +62,16 @@ export default function Book({
   );
 }
 
+Book.defaultProps = {
+  chapter: 'Not Specificated',
+  percentage: 0,
+};
+
 Book.propTypes = {
   title: propTypes.string.isRequired,
   author: propTypes.string.isRequired,
-  percentage: propTypes.number.isRequired,
-  chapter: propTypes.string.isRequired,
+  percentage: propTypes.number,
+  chapter: propTypes.string,
   category: propTypes.string.isRequired,
   id: propTypes.string.isRequired,
 };

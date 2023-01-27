@@ -1,50 +1,29 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { getBooks } from './apiConnect';
 
 const initialState = {
-  books: [
-    {
-      id: 'br6bnAI4ueuoOcRkmd1cP',
-      title: 'Slaughterhouse-Five, or, The Childrens Crusade: A Duty-Dance with Death',
-      author: 'Kurt Vonnegut',
-      category: 'Satire',
-      chapter: 'Chapter 5',
-      percentage: 37,
-    },
-    {
-      id: 'dVxxLqeVbc0lA4ULXhkOn',
-      title: 'Moby Dick',
-      author: 'Herman Melville',
-      category: 'Epic',
-      chapter: 'Chapter 3',
-      percentage: 24,
-    },
-    {
-      id: 'dVxxLqI4ueuoOcRkmd1cP',
-      title: 'The Banquet',
-      author: 'Plato',
-      category: 'Philosophy',
-      chapter: 'Chapter 1',
-      percentage: 12,
-    },
-  ],
+  books: [],
+  state: null,
 };
 
 const books = createSlice({
   name: 'books',
   initialState,
-  reducers: {
-    addBook: (state, action) => {
-      state.books.push(action.payload);
-    },
-    removeBook: (state, action) => ({
+  extraReducers: {
+    [getBooks.pending]: (state) => ({
       ...state,
-      books: state.books.filter((book) => book.id !== action.payload),
+      status: 'loading',
     }),
-  },
-  extraReducers: (builder) => {
-    builder.addDefaultCase((state) => state);
+    [getBooks.fulfilled]: (state, action) => ({
+      ...state,
+      status: 'success',
+      books: action.payload,
+    }),
+    [getBooks.rejected]: (state) => ({
+      ...state,
+      status: 'failed',
+    }),
   },
 });
 
-export const { addBook, removeBook } = books.actions;
 export default books.reducer;
