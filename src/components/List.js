@@ -13,7 +13,7 @@ export default function List() {
   }, []);
 
   return (
-    <section className="flex h-[70%] mx-16 px-4 flex-wrap gap-y-1 py-4 overflow-auto font-serif">
+    <section className="flex h-[70%] mx-16 px-4 flex-wrap gap-y-1 py-4 font-serif overflow-auto">
       {
         books.length ? books.map((book) => (
           <Book
